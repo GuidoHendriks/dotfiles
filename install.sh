@@ -21,11 +21,14 @@ else
 fi
 
 echo "- Creating needed folders"
-mkdir -p ~/Development
+mkdir -p ~/Developer
 
 echo "- Linking files"
 ln -nfs "$(pwd)/.zshrc" "$HOME/.zshrc"
 ln -nfs "$(pwd)/.gitconfig" "$HOME/.gitconfig"
 ln -nfs "$(pwd)/gitignore" "$HOME/.gitignore"
+
+mkdir -p "$HOME/.composer"
+ln -nfs "$(pwd)/composer.json" "$HOME/.composer/composer.json"
 
 echo "All done, don't forget to restart your shell"
