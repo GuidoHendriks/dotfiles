@@ -1,0 +1,19 @@
+[user]
+  name = Guido Hendriks
+  email = guido@hendriks-development.nl
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = ~/.gitignore
+[help]
+  autocorrect = 1
+[push]
+  default = simple
+[github]
+  user = guidohendriks
+[fetch]
+  prune = true
+[rebase]
+  autosquash = true
