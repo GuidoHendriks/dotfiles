@@ -5,6 +5,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "shivammathur/php"
 
 brew "git"
 brew "yarn"
@@ -12,6 +13,7 @@ brew "composer"
 
 brew "php"
 brew "php@7.4"
+brew "php@5.6"
 brew "imagemagick"
 
 brew "mysql@5.7"
@@ -26,5 +28,6 @@ cask "telegram"
 cask "tinkerwell"
 cask "tower"
 cask "whatsapp"
+cask "forticlient-vpn"
 
 mas "xcode", id: 497799835
