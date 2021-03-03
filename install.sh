@@ -28,7 +28,12 @@ ln -nfs "$(pwd)/.zshrc" "$HOME/.zshrc"
 ln -nfs "$(pwd)/.gitconfig" "$HOME/.gitconfig"
 ln -nfs "$(pwd)/gitignore" "$HOME/.gitignore"
 
-mkdir -p "$HOME/.composer"
-ln -nfs "$(pwd)/composer.json" "$HOME/.composer/composer.json"
+echo "- Installing Laravel Valet"
+if ! command -v valet >/dev/null; then
+  composer global require laravel/valet
+  valet install
+else
+  echo "...Already installed, skipping"
+fi
 
 echo "All done, don't forget to restart your shell"

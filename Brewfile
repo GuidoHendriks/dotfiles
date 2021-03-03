@@ -30,4 +30,5 @@ cask "tower"
 cask "whatsapp"
 cask "forticlient-vpn"
 
+mas "harvest", id: 506189836
 mas "xcode", id: 497799835
