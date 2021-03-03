@@ -11,7 +11,6 @@ brew "git"
 brew "node"
 brew "yarn"
 brew "composer"
-brew "cocoapods"
 
 brew "php"
 brew "php@7.4"
@@ -31,6 +30,8 @@ cask "tinkerwell"
 cask "tower"
 cask "whatsapp"
 cask "forticlient-vpn"
+cask "paw"
+cask "ngrok"
 
 mas "harvest", id: 506189836
 mas "xcode", id: 497799835
