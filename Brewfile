@@ -8,6 +8,7 @@ tap "homebrew/services"
 tap "shivammathur/php"
 
 brew "git"
+brew "node"
 brew "yarn"
 brew "composer"
 
