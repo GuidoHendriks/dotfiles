@@ -11,6 +11,7 @@ brew "git"
 brew "node"
 brew "yarn"
 brew "composer"
+brew "cocoapods"
 
 brew "php"
 brew "php@7.4"
