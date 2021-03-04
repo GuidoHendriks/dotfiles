@@ -7,6 +7,25 @@ else
   echo "...Already installed, skipping"
 fi
 
+echo "- Generate SSH key"
+if ! [ -d ~/.ssh/id_ed25519 ]; then
+  ssh-keygen -t ed25519 -C "guido@hendriks-development.nl"
+  ssh-keygen -t rsa -b 4096 -C "guido@hendriks-development.nl"
+  eval "$(ssh-agent -s)"
+  
+  cp ./ssh_config ~/.ssh/config
+
+  ssh-add -K ~/.ssh/id_ed25519
+  ssh-add -K ~/.ssh/id_rsa
+
+  cat ~/.ssh/id_ed25519.pub
+  cat ~/.ssh/id_rsa.pub
+
+  open "https://github.com/settings/keys"
+else
+  echo "...Already installed, skipping"
+fi
+
 echo "- Installing Apps"
 brew bundle
 
