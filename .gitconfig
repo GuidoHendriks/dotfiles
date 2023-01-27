@@ -17,3 +17,5 @@
   prune = true
 [rebase]
   autosquash = true
+[init]
+	defaultBranch = main
